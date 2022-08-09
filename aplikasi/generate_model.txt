@@ -1,0 +1,28 @@
+import pickle
+import os
+
+filename = "svmlin.sav"
+myFile = open(filename, "w+")
+myFile.close()
+clf = SVC(kernel="linear", C=0.025)
+print("1 svmlinear")
+now = datetime.datetime.now()
+print (now.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+clf.fit(X_important_train,y_train)
+now = datetime.datetime.now()
+print (now.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+print("___________________________")
+pickle.dump(clf, open(filename, 'wb'))
+
+filename = "rfc.sav"
+myFile = open(filename, "w+")
+myFile.close()
+rfc = RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1)
+print("5 rfc")
+now = datetime.datetime.now()
+print (now.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+rfc.fit(X_important_train,y_train)
+now = datetime.datetime.now()
+print (now.strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+print("___________________________")
+pickle.dump(rfc, open(filename, 'wb'))
