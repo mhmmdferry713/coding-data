@@ -1,0 +1,21 @@
+sudo pip3 install CoapThon3
+git clone https://github.com/Tanganelli/CoAPthon3
+sudo apt-get install tcpreplay
+sudo pip3 install scapy
+
+
+topologi :
+sudo mn --topo tree,depth=3,fanout=2 --mac --controller=remote
+
+mininet :
+xterm h1 h6
+
+h1 command:
+sudo tcpreplay --pps=20 -l 1 --intf1=h1-eth0 test.pcap
+sudo tcpreplay --pps=50 -l 1 --intf1=h1-eth0 test.pcap
+sudo tcpreplay --pps=70 -l 1 --intf1=h1-eth0 test.pcap
+
+
+h6 command:
+python3 coapserver.py -h
+python3 coapserver.py -i 10.0.0.6 -p 5683
