@@ -131,7 +131,7 @@ class SimpleSwitch13(app_manager.RyuApp):
         self.dtc = pickle.load(open(self.filename8, 'rb'))
         self.rfc = pickle.load(open(self.filename9, 'rb'))
         self.mlp = pickle.load(open(self.filename10, 'rb'))
-        self.adc = pickle.load(open(self.filename11, 'rb'))
+        self.adb = pickle.load(open(self.filename11, 'rb'))
         self.gnb = pickle.load(open(self.filename12, 'rb'))
         self.svmlin = pickle.load(open(self.filename14, 'rb'))
 
@@ -264,7 +264,7 @@ class SimpleSwitch13(app_manager.RyuApp):
                 f3 = open("dtc", "a+")
                 f4 = open("rfc", "a+")
                 f5 = open("mlp", "a+")
-                f6 = open("adc", "a+")
+                f6 = open("adb", "a+")
                 f7 = open("gnb", "a+")
                 f9 = open("svmlin", "a+")
                 data = np.array([[total_length.transform([(self.total_length)])[0],
@@ -285,7 +285,7 @@ class SimpleSwitch13(app_manager.RyuApp):
                 res3 = self.dtc.predict(data)
                 res4 = self.rfc.predict(data)
                 res5 = self.mlp.predict(data)
-                res6 = self.adc.predict(data)
+                res6 = self.adb.predict(data)
                 res7 = self.gnb.predict(data)
                 res9 = self.svmlin.predict(data)
                 self.i = self.i + 1
