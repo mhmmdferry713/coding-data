@@ -1,0 +1,172 @@
+
+['datapath_id', 'version', 'header_length', 'tos', 'total_length', 'flags', 'offset', 'ttl', 'proto', 'csum', 'src_ip', 'dst_ip', 'src_port', 'dst_port', 'port_no', 'rx_bytes_ave', 'rx_error_ave', 'rx_dropped_ave', 'tx_bytes_ave', 'tx_error_ave', 'tx_dropped_ave', 'label']
+
+22
+
+160006
+
+39994
+Logistic Regression
+Feature: 0, Score: 0.00000
+Feature: 1, Score: 0.00000
+Feature: 2, Score: 0.00000
+Feature: 3, Score: 0.00000
+Feature: 4, Score: -1.61720
+Feature: 5, Score: 6.76580
+Feature: 6, Score: 0.00000
+Feature: 7, Score: 0.00000
+Feature: 8, Score: 0.00000
+Feature: 9, Score: -0.00195
+Feature: 10, Score: -1.85064
+Feature: 11, Score: 0.00000
+Feature: 12, Score: -0.26961
+Feature: 13, Score: 0.00000
+Feature: 14, Score: -0.08737
+Feature: 15, Score: 3.04460
+Feature: 16, Score: 0.00000
+Feature: 17, Score: 0.00000
+Feature: 18, Score: 0.08789
+Feature: 19, Score: 0.00000
+Feature: 20, Score: 0.00000
+
+-----------------------------------------------------------------------------
+[4, 5, 9, 10, 12, 14, 15, 18]
+['total_length', 'flags', 'csum', 'src_ip', 'src_port', 'port_no', 'rx_bytes_ave', 'tx_bytes_ave']
+   total_length  flags   csum  ... port_no  rx_bytes_ave  tx_bytes_ave
+0            40      0  41034  ...       1            64           152
+1            39      0   7094  ...       1            63           152
+2            40      0  55969  ...       1            61           152
+3            40      0  55969  ...       1            61           152
+4            40      0  55969  ...       1            61           152
+
+[5 rows x 8 columns]
+1 svmlinear
+2022-08-15 14:25:11.428
+2022-08-15 14:25:33.890
+_________
+2 svmrbf
+2022-08-15 14:25:33.891
+2022-08-15 14:25:37.545
+_________
+3 rfc
+2022-08-15 14:25:37.545
+2022-08-15 14:25:37.756
+_________
+4 dtc
+2022-08-15 14:25:37.756
+2022-08-15 14:25:37.806
+_________
+5 mlp
+2022-08-15 14:25:37.806
+2022-08-15 14:25:43.160
+_________
+6 gnb
+2022-08-15 14:25:43.161
+2022-08-15 14:25:43.192
+_________
+7 adb
+2022-08-15 14:25:43.192
+2022-08-15 14:25:43.256
+_________
+8 knn
+2022-08-15 14:25:43.257
+2022-08-15 14:25:43.425
+_________
+SVMLIN Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 1.0
+_________
+SVM RBF Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 0.9999749962494374
+_________
+RFC Results : 
+              precision    recall  f1-score   support
+
+           0       0.82      1.00      0.90     19999
+           1       1.00      0.79      0.88     19995
+
+    accuracy                           0.89     39994
+   macro avg       0.91      0.89      0.89     39994
+weighted avg       0.91      0.89      0.89     39994
+
+Accuracy: 0.893634045106766
+_________
+DTC Results : 
+              precision    recall  f1-score   support
+
+           0       0.83      1.00      0.91     19999
+           1       1.00      0.80      0.89     19995
+
+    accuracy                           0.90     39994
+   macro avg       0.92      0.90      0.90     39994
+weighted avg       0.92      0.90      0.90     39994
+
+Accuracy: 0.900010001500225
+_________
+MLP Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 1.0
+_________
+GNB Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 1.0
+_________
+ADB Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 1.0
+_________
+KNN Results : 
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19999
+           1       1.00      1.00      1.00     19995
+
+    accuracy                           1.00     39994
+   macro avg       1.00      1.00      1.00     39994
+weighted avg       1.00      1.00      1.00     39994
+
+Accuracy: 0.9999749962494374
+_________
+
+-----------------------------------------------------------------------------
