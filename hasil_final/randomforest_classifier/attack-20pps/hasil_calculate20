@@ -1,0 +1,248 @@
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+(38381,)
+int64
+[    0     1     2 ... 39990 39991 39992]
+(38381,)
+int64
+[    0     1     2 ... 39858 39859 39860]
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+adb-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19912
+           1       1.00      1.00      1.00     18469
+
+    accuracy                           1.00     38381
+   macro avg       1.00      1.00      1.00     38381
+weighted avg       1.00      1.00      1.00     38381
+
+Accuracy adb-20pps 100.0
+Precision adb-20pps 100.0
+Recall adb-20pps 100.0
+f1 adb-20pps 100.0
+Precision adb-20pps 100.0
+Recall adb-20pps 100.0
+f1 adb-20pps 100.0
+[[19912     0]
+ [    0 18469]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+dtc-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19912
+           1       1.00      1.00      1.00     18469
+
+    accuracy                           1.00     38381
+   macro avg       1.00      1.00      1.00     38381
+weighted avg       1.00      1.00      1.00     38381
+
+Accuracy dtc-20pps 100.0
+Precision dtc-20pps 100.0
+Recall dtc-20pps 100.0
+f1 dtc-20pps 100.0
+Precision dtc-20pps 100.0
+Recall dtc-20pps 100.0
+f1 dtc-20pps 100.0
+[[19912     0]
+ [    0 18469]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+gnb-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19912
+           1       1.00      1.00      1.00     18469
+
+    accuracy                           1.00     38381
+   macro avg       1.00      1.00      1.00     38381
+weighted avg       1.00      1.00      1.00     38381
+
+Accuracy gnb-20pps 100.0
+Precision gnb-20pps 100.0
+Recall gnb-20pps 100.0
+f1 gnb-20pps 100.0
+Precision gnb-20pps 100.0
+Recall gnb-20pps 100.0
+f1 gnb-20pps 100.0
+[[19912     0]
+ [    0 18469]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+knn-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      0.52      0.68     38381
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.52     38381
+   macro avg       0.50      0.26      0.34     38381
+weighted avg       1.00      0.52      0.68     38381
+
+Accuracy knn-20pps 51.879836377374225
+Precision knn-20pps 51.879836377374225
+Recall knn-20pps 51.879836377374225
+f1 knn-20pps 51.879836377374225
+Precision knn-20pps 25.939918188687113
+Recall knn-20pps 50.0
+f1 knn-20pps 34.15847528862814
+[[19912     0]
+ [18469     0]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+mlp-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      0.52      0.68     38381
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.52     38381
+   macro avg       0.50      0.26      0.34     38381
+weighted avg       1.00      0.52      0.68     38381
+
+Accuracy mlp-20pps 51.879836377374225
+Precision mlp-20pps 51.879836377374225
+Recall mlp-20pps 51.879836377374225
+f1 mlp-20pps 51.879836377374225
+Precision mlp-20pps 25.939918188687113
+Recall mlp-20pps 50.0
+f1 mlp-20pps 34.15847528862814
+[[19912     0]
+ [18469     0]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+rfc-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      0.73      0.84     27301
+           1       0.60      1.00      0.75     11080
+
+    accuracy                           0.81     38381
+   macro avg       0.80      0.86      0.80     38381
+weighted avg       0.88      0.81      0.82     38381
+
+Accuracy rfc-20pps 80.7482869127954
+Precision rfc-20pps 80.7482869127954
+Recall rfc-20pps 80.7482869127954
+f1 rfc-20pps 80.7482869127954
+Precision rfc-20pps 86.46752866195378
+Recall rfc-20pps 79.9962098651795
+f1 rfc-20pps 79.6718635473572
+[[19912     0]
+ [ 7389 11080]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+svmlin-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00     19912
+           1       1.00      1.00      1.00     18469
+
+    accuracy                           1.00     38381
+   macro avg       1.00      1.00      1.00     38381
+weighted avg       1.00      1.00      1.00     38381
+
+Accuracy svmlin-20pps 100.0
+Precision svmlin-20pps 100.0
+Recall svmlin-20pps 100.0
+f1 svmlin-20pps 100.0
+Precision svmlin-20pps 100.0
+Recall svmlin-20pps 100.0
+f1 svmlin-20pps 100.0
+[[19912     0]
+ [    0 18469]]
+packet loss :4.033104965744862
+38388
+38408
+38381
+['DDOS' 'NORMAL']
+svmrbf-20pps
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       1.00      0.52      0.68     38381
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.52     38381
+   macro avg       0.50      0.26      0.34     38381
+weighted avg       1.00      0.52      0.68     38381
+
+Accuracy svmrbf-20pps 51.879836377374225
+Precision svmrbf-20pps 51.879836377374225
+Recall svmrbf-20pps 51.879836377374225
+f1 svmrbf-20pps 51.879836377374225
+Precision svmrbf-20pps 25.939918188687113
+Recall svmrbf-20pps 50.0
+f1 svmrbf-20pps 34.15847528862814
+[[19912     0]
+ [18469     0]]
+packet loss :4.033104965744862
